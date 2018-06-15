@@ -133,6 +133,6 @@ function gen_pass() {
 		}
     }
 
-    document.getElementById('pass_place').value = password;
+    document.getElementById('pass_place').innerHTML = password;
 
 }
