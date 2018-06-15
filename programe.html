@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Обнови пароль</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+    <div id="main_block">
+		        <div class="parameter">
+					<div class="site" id="vk"  onmouseenter="paint_on('vk')" onmouseleave="paint_off('vk')" onclick="сhoise('vk')">VK
+					</div><div class="site" id="gu" onmouseenter="paint_on('gu')" onmouseleave="paint_off('gu')" onclick="сhoise('gu')">Госуслуги
+					</div><div class="site" id="ph"  onmouseenter="paint_on('ph')" onmouseleave="paint_off('ph')" onclick="сhoise('ph')">p**nhub
+					</div><div class="site" id="my"  onmouseenter="paint_on('my')" onmouseleave="paint_off('my')" onclick="сhoise('my')">Своё
+					</div>
+		        </div>
+    
+				<div class="parameter" id="options">
+					<div id="ranger">
+						<div id="ranger_line_placer">
+						     <input id="ranger_line" type="range" min="4" max="20" step="1" value="10" onchange="dynamic()">
+						</div>
+						<div id="range_value">10</div>
+						<div class="checkboxes">#<input name="check_symbol" id="check_symbol" checked="checked" type="checkbox" onclick="gen_pass()"></div>
+						<div class="checkboxes">1<input name="check_number" id="check_number" checked="checked" type="checkbox" onclick="gen_pass()"></div>
+						<div class="checkboxes">a<input name="check_small" id="check_small" checked="checked" type="checkbox" onclick="gen_pass()"></div>
+						<div class="checkboxes">A<input name="check_big" id="check_big" checked="checked" type="checkbox" onclick="gen_pass()"></div>
+
+					</div>
+				</div>
+				<form id="form_pass">
+					<input type="" id="pass_place" name="pass_place" /><br/>
+				</form>
+				<div>
+					<div class="buttons" id="button_gen" onclick="gen_pass()">создать пароль
+					</div>
+					<div class="buttons" id="button_copy" onclick="copy_pass()">копировать пароль
+					</div>
+				</div>
+				
+	<script>startpage()</script>
+	</div>
+
+</body>
+</html>

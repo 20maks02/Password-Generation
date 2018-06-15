@@ -1,0 +1,129 @@
+@font-face {    /*пуленепробиваемая суперсовместимая штука для подключения шрифтов*/
+  font-family: 'Open_Sans';
+  src: url('fonts/OpenSans-Regular.eot'); /* IE9 Compat Modes */
+  src: url('fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/OpenSans-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/OpenSans-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/OpenSans-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/OpenSans-Regular.svg#OpenSans-Regular') format('svg'); /* Legacy iOS */
+}
+
+*{
+color: #3c4a55;
+text-align: center;
+}
+body{
+margin: 0;
+padding: 0;
+height: 100vh;
+font-family: 'Open_Sans', sans-serif;
+}
+#main_block{
+margin: auto;
+display: block;
+min-width:420px;
+max-width: 800px;	
+width: 50%;
+background-color: #4781FF;
+}
+.parameter{
+width:100%;	
+height:50px;
+line-height: 48px;
+font-size: 20px;
+}
+#options{
+	display:block;
+	width:420px;
+	margin: 0 auto;
+}
+.site{
+float:left;
+display:inline-block;
+width:25%;	
+background-color: #B2D2FF;
+height: 100%;
+transition: 0.32s;
+cursor: pointer;
+
+-moz-user-select: -moz-none;
+-o-user-select: none;
+-khtml-user-select: none;
+-webkit-user-select: none;
+user-select: none;
+
+
+}
+#vk:hover,#gu:hover,#ph:hover,#my:hover{ /*не захотело работать, пришлось лепить на JS*/
+background-color: #ff0088;
+}
+#pass_place{
+width:100%;	
+box-sizing:border-box;
+height: 50px;
+font-size: 30px;
+}
+
+#range_value{
+	float:left;
+	display:inline-block;
+color: #EEEEEE;
+font-size: 25px;
+margin-top:-3px;
+}
+#ranger_line_placer{
+	display:inline-block;
+	float:left;	
+}
+#ranger_line{
+/*margin-top:10px;	*/
+	
+}
+
+#ranger{
+/*padding-top: 5px;*/
+	/*width:200px;*/
+	margin-top:9px;
+}
+
+.checkboxes{
+display:inline-block;
+float:right;		
+margin-top:-3px;
+margin-left:15px;
+color: #EEEEEE;
+font-size: 25px;
+}
+input[type=checkbox]{
+		/*что-то размеры квадратиков не масшбатируются*/
+}
+
+.buttons{
+display: inline-block;
+position: relative;
+float:left;
+	
+background-color: #E02704;
+color: #EEEEEE;
+box-sizing: border-box;
+
+font-weight: normal;
+font-size: 20px;
+line-height: 48px;
+text-align: center;
+cursor: pointer;
+width: 50%;
+height: 50px;
+transition: 0.32s;
+/*нельзя текст выделять*/
+-moz-user-select: -moz-none;
+-o-user-select: none;
+-khtml-user-select: none;
+-webkit-user-select: none;
+user-select: none;
+}
+
+.buttons:hover{
+background-color: #FF7777;
+	
+}
